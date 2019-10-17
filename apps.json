@@ -1,0 +1,271 @@
+[
+  {
+    "title": "BookIt",
+    "desc": "A Search and Save MERN Stack powered by Google Books",
+    "technology": [
+      "NodeJS",
+      "ExpressJS",
+      "RecatJS",
+      "Socket.io",
+      "MongoDB",
+      "Mongoose",
+      "Material-UI"
+    ],
+    "repo": "BookIt",
+    "href": "https://book-it-by-eugene.herokuapp.com/",
+    "imgFull": "bookit.png",
+    "category": "UI",
+    "featured": false
+  },
+  {
+    "title": "Hold-Em Logic",
+    "desc": "A Texas Hold-Em Poker CLI",
+    "technology": ["NodeJS", "ES6", "Babel", "Inquirer", "Lodash"],
+    "repo": "hold-em-logic",
+    "href": "#",
+    "imgFull": "hold-em.png",
+    "category": "CLI",
+    "featured": false
+  },
+  {
+    "title": "Click-Bait",
+    "desc": "A Simple Memory Game built with ReactJS ",
+    "technology": ["NodeJS", "ReactJS"],
+    "repo": "click-bait",
+    "href": "https://click-bait-by-eugene.herokuapp.com/",
+    "imgFull": "click-bait.png",
+    "category": "Game",
+    "featured": false
+  },
+  {
+    "title": "Recipe Scraper",
+    "desc": "An Allrecipes.com Scraper, so you can focus on cooking",
+    "technology": [
+      "NodeJS",
+      "ExpressJS",
+      "Handlebars",
+      "Cheerio",
+      "Axios",
+      "MongoDB",
+      "Mongoose"
+    ],
+    "repo": "Recipe-Scraper",
+    "href": "https://recipe-scraper-by-eugene.herokuapp.com/",
+    "imgFull": "recipe-scraper.png",
+    "category": "UI",
+    "featured": false
+  },
+  {
+    "title": "Busy Bee",
+    "desc": "A Maintenance and Work Management System for the Home",
+    "technology": [
+      "NodeJS",
+      "ExpressJS",
+      "MySQL",
+      "Sequelize",
+      "Axios",
+      "Moment",
+      "SendGrid",
+      "jQuery"
+    ],
+    "repo": "Project2",
+    "href": "https://busy-bee-home.herokuapp.com/",
+    "imgFull": "recipe-scraper.png",
+    "category": "Project",
+    "featured": true
+  },
+  {
+    "title": "Story Chain",
+    "desc": "A Place To Make a Bad Story Worse",
+    "technology": ["NodeJS", "ExpressJS", "Handlebars", "MySQL"],
+    "repo": "story-chain",
+    "href": "https://story-chain-by-eugene.herokuapp.com/",
+    "imgFull": "story-chain.png",
+    "category": "Social",
+    "featured": false
+  },
+  {
+    "title": "Friend Finder",
+    "desc": "A Social Media Site where users can make and take surveys to find friends",
+    "technology": ["NodeJS", "ExpressJS", "Handlebars", "MySQL"],
+    "repo": "FriendFinder",
+    "href": "https://friend-finder-by-eugene.herokuapp.com/",
+    "imgFull": "friend-finder.png",
+    "category": "Social",
+    "featured": false
+  },
+  {
+    "title": "Inventory Management",
+    "desc": "A powerful three-facing inventory and retail management system CLI",
+    "technology": ["NodeJS", "Inquirer", "Moment", "MySQL", "Encrypter"],
+    "repo": "IMS-cli",
+    "href": "#",
+    "imgFull": "ims-cli.png",
+    "category": "CLI",
+    "featured": false
+  },
+  {
+    "title": "Inventory Management",
+    "desc": "A powerful three-facing inventory and retail management system CLI",
+    "technology": ["NodeJS", "Inquirer", "Moment", "MySQL", "Encrypter"],
+    "repo": "IMS-cli",
+    "href": "#",
+    "imgFull": "ims-cli.png",
+    "category": "CLI",
+    "featured": false
+  },
+  {
+    "title": "Word Guess",
+    "desc": "A single player hangman style guessing game with a Rick and Morty theme",
+    "technology": ["HTML 5", "jQuery", "CSS"],
+    "repo": "Word-Guess",
+    "href": "https://ejhalpin.github.io/Word-Guess/",
+    "imgFull": "word-guess.png",
+    "category": "Game",
+    "featured": false
+  },
+  {
+    "title": "Rock-Paper-Scissors",
+    "desc": "A Player vs. Player Platform powered by Firebase ",
+    "technology": [
+      "HTML 5",
+      "jQuery",
+      "CSS",
+      "firebase real-time database",
+      "firebase authentication"
+    ],
+    "repo": "RPS-Game",
+    "href": "https://ejhalpin.github.io/RPS-Game",
+    "imgFull": "rps-game.png",
+    "category": "Game",
+    "featured": false
+  },
+  {
+    "title": "Battlestar Galactica Trivia",
+    "desc": "A simple timed trivia game with a few animations and random question delivery.",
+    "technology": ["HTML 5", "jQuery", "CSS"],
+    "repo": "TriviaGame",
+    "href": "https://ejhalpin.github.io/TriviaGame",
+    "imgFull": "trivia-game.png",
+    "category": "Game",
+    "featured": false
+  },
+  {
+    "title": "FFVII RPG Game",
+    "desc": "A Final Fantasy VII themed single player card attack came where players must pick their hero and attack their foes.",
+    "technology": ["HTML 5", "jQuery", "CSS"],
+    "repo": "unit-4-challenge",
+    "href": "https://ejhalpin.github.io/unit-4-challenge",
+    "imgFull": "rpg-game.png",
+    "category": "Game",
+    "featured": false
+  },
+  {
+    "title": "Psychic Game",
+    "desc": "A single player game with a simple concept: guess the letter.",
+    "technology": ["HTML 5", "jQuery", "CSS"],
+    "repo": "Psychic-Game",
+    "href": "https://ejhalpin.github.io/Psychic-Game",
+    "imgFull": "psychic-game.png",
+    "category": "Game",
+    "featured": false
+  },
+  {
+    "title": "TradeCraft",
+    "desc": "A simple randomization engine powers this math matching game.",
+    "technology": ["HTML 5", "jQuery", "CSS"],
+    "repo": "Unit-4-Game",
+    "href": "https://ejhalpin.github.io/Unit-4-Game",
+    "imgFull": "trade-craft.png",
+    "category": "Game",
+    "featured": false
+  },
+  {
+    "title": "Giphy Search UI",
+    "desc": "A simple high-contrast UI powered by the Giphy API.",
+    "technology": ["HTML 5", "jQuery", "CSS", "Ajax", "Giphy API"],
+    "repo": "giphy-search",
+    "href": "https://ejhalpin.github.io/giphy-search",
+    "imgFull": "giphy-search.png",
+    "category": "UI",
+    "featured": false
+  },
+  {
+    "title": "Just the Tip",
+    "desc": "A simple UI form that will calculate the tip for a user-provided check amount.",
+    "technology": ["HTML 5", "jQuery", "CSS"],
+    "repo": "tip-calculator",
+    "href": "https://ejhalpin.github.io/tip-calculator",
+    "imgFull": "tip-calc.png",
+    "category": "UI",
+    "featured": false
+  },
+  {
+    "title": "New York Times Search",
+    "desc": "A simple high-contrast UI powered by the NY Times API.",
+    "technology": ["HTML 5", "jQuery", "CSS", "Ajax", "NY Times API"],
+    "repo": "NYT-search",
+    "href": "https://ejhalpin.github.io/NYT-search",
+    "imgFull": "nyt-search.png",
+    "category": "UI",
+    "featured": false
+  },
+  {
+    "title": "Recipe Box",
+    "desc": "A search and save UI for recipes.",
+    "technology": [
+      "HTML 5, CSS",
+      "jQuery",
+      "Ajax Requests",
+      "Giphy API",
+      "Edamam API",
+      "firebase real-time database",
+      "firebase authentication"
+    ],
+    "repo": "Project1",
+    "href": "https://ejhalpin.github.io/Project1",
+    "imgFull": "recipe-box.png",
+    "category": "Project",
+    "featured": true
+  },
+  {
+    "title": "LIRI",
+    "desc": "A node cli that performs searches for bands/artists and movies and returns concert information, song information, or movie information.",
+    "technology": [
+      "NodeJS",
+      "fs",
+      "inquirer",
+      "axios",
+      "node spotify wrapper",
+      "Bands-In-Town API"
+    ],
+    "repo": "liri-node-app",
+    "href": "https://ejhalpin.github.io/liri-node-app",
+    "imgFull": "liri-node-app.png",
+    "category": "CLI",
+    "featured": false
+  },
+  {
+    "title": "Texas Hold-Em Poker",
+    "desc": "A Full Stack Multiplayer Poker App",
+    "technology": [
+      "NodeJS",
+      "ExpressJS",
+      "ReactJS",
+      "Auth0",
+      "Moment",
+      "MongoDB",
+      "Mongoose",
+      "RESTful API",
+      "Material-UI",
+      "Multer",
+      "Axios",
+      "Lodash"
+    ],
+    "repo": "Project3",
+    "href": "https://warm-garden-85112.herokuapp.com/",
+    "imgFull": "poker-app.png",
+    "category": "Project",
+    "featured": true
+  }
+]
