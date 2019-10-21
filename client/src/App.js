@@ -86,7 +86,12 @@ class App extends Component {
   };
 
   handleFormSubmit = () => {
-    API.sendMessage(this.state)
+    var obj = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
+    };
+    API.sendMessage(obj)
       .then(res => {
         this.setState({ open: false, email: "", name: "", message: "" });
       })
