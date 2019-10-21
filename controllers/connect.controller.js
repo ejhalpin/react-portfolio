@@ -1,5 +1,6 @@
 require("dotenv").config();
 var sg = require("sendgrid")(process.env.SG_MAIL_KEY);
+var path = require("path");
 
 module.exports = {
   sendMessage: (req, res) => {
@@ -66,5 +67,16 @@ module.exports = {
       .catch(err => {
         res.status(500).json({ err });
       });
+  },
+
+  getResume: (req, res) => {
+    switch (req.params.format) {
+      case "word":
+        res.download(path.join(__dirname, "../files/E-Halpin-Resume.docx"));
+        break;
+      case "pdf":
+        res.download(path.join(__dirname, "../files/E-Halpin-Resume.pdf"));
+        break;
+    }
   }
 };

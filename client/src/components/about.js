@@ -1,5 +1,6 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
+import classnames from "classnames";
 
 const styles = {
   container: {
@@ -7,8 +8,10 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    width: "100%",
-    height: "max-content"
+    width: "90%",
+    height: "max-content",
+    padding: "10px",
+    boxSizing: "border-box"
   },
   box: {
     display: "flex",
@@ -17,7 +20,11 @@ const styles = {
     justifyContent: "center",
     flexWrap: "wrap",
     width: "100%",
-    height: "max-content"
+    padding: "10px",
+    backgroundColor: "#f0efd1",
+    height: "max-content",
+    boxSizing: "border-box",
+    boxShadow: "0px 2px #000"
   },
   pic: {
     width: "200px",
@@ -31,19 +38,23 @@ const styles = {
   text: {
     color: "#1c1c1c",
     marginLeft: "20px",
-    maxWidth: "400px",
-    minWidth: "280px"
+    maxWidth: "400px"
+  },
+  sm: {
+    fontSize: "0.8em",
+    marginLeft: "0",
+    marginRight: "0"
   }
 };
 
 const About = props => {
-  const { container, containerSm, pic, text, box } = props.classes;
-
+  const { container, pic, text, box, sm, p } = props.classes;
+  const { breakPoint } = props;
   return (
-    <div className={props.breakPoint ? containerSm : container}>
+    <div className={container}>
       <div className={box}>
-        <div className={pic}></div>
-        <div className={text}>
+        <div className={breakPoint ? classnames(pic, sm) : pic}></div>
+        <div className={breakPoint ? classnames(text, sm) : text}>
           <p>
             Eugene Halpin began his professional career as a teacher,
             specializing in physics. Eugene's problem solving skills, innovative

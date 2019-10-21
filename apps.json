@@ -70,7 +70,7 @@
     ],
     "repo": "Project2",
     "href": "https://busy-bee-home.herokuapp.com/",
-    "imgFull": "recipe-scraper.png",
+    "imgFull": "busy-bee.png",
     "category": "Project",
     "featured": true
   },
@@ -92,16 +92,6 @@
     "href": "https://friend-finder-by-eugene.herokuapp.com/",
     "imgFull": "friend-finder.png",
     "category": "Social",
-    "featured": false
-  },
-  {
-    "title": "Inventory Management",
-    "desc": "A powerful three-facing inventory and retail management system CLI",
-    "technology": ["NodeJS", "Inquirer", "Moment", "MySQL", "Encrypter"],
-    "repo": "IMS-cli",
-    "href": "#",
-    "imgFull": "ims-cli.png",
-    "category": "CLI",
     "featured": false
   },
   {
@@ -197,7 +187,7 @@
     "repo": "tip-calculator",
     "href": "https://ejhalpin.github.io/tip-calculator",
     "imgFull": "tip-calc.png",
-    "category": "UI",
+    "category": "Social",
     "featured": false
   },
   {

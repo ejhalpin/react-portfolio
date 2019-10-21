@@ -5,6 +5,7 @@ import { Email } from "@material-ui/icons";
 const styles = {
   topNav: {
     position: "fixed",
+    zIndex: 1000,
     top: "0",
     width: "100%",
     display: "flex",
@@ -13,7 +14,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "space-evenly",
     padding: "5px 10px",
-    backgroundColor: "#000"
+    backgroundColor: "#bf3211"
   },
   sideNav: {
     position: "fixed",
@@ -27,34 +28,45 @@ const styles = {
     alignItems: "center",
     justifyContent: "flex-start",
     padding: "10px 5px",
-    backgroundColor: "#000",
+    backgroundColor: "#bf3211",
     overflow: "auto"
   },
   elemSide: {
     margin: "25px 5px",
-    color: "#f5f5f5",
+    color: "#f0efd1",
     whiteSpace: "noWrap",
     cursor: "pointer",
-    fontSize: "1rem"
+    fontSize: "1.25rem",
+    textShadow: "0px 2px #000",
+    "&:hover": {
+      color: "#cfba58"
+    }
   },
   elemTop: {
     padding: "5px",
-    color: "#f5f5f5",
+    color: "#f0efd1",
     width: "min-content",
     fontSize: "0.9rem",
-    cursor: "pointer"
+    cursor: "pointer",
+    textShadow: "0px 2px #000",
+    "&:hover": {
+      color: "#cfba58"
+    }
   },
   brand: {
     fontSize: "1.25rem",
-    color: "#cfba58",
+    fontWeight: 700,
+    color: "#f0efd1",
     whiteSpace: "noWrap",
-    margin: "10px 2px"
+    margin: "10px 2px",
+    textShadow: "0px 2px #000"
   },
   brandSm: {
     fontSize: "1rem",
-    color: "#cfba58",
+    color: "#f0efd1",
     whiteSpace: "noWrap",
-    margin: "5px 2px"
+    margin: "5px 2px",
+    textShadow: "0px 2px #000"
   },
   navImg: {
     width: "100px",
@@ -62,7 +74,8 @@ const styles = {
     backgroundImage: 'url("/assets/images/profile.png")',
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    borderRadius: "50px"
+    borderRadius: "50px",
+    boxShadow: "0px 2px 2px #000"
   },
   navImgSm: {
     width: "60px",
@@ -70,7 +83,8 @@ const styles = {
     backgroundImage: 'url("/assets/images/profile.png")',
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    borderRadius: "30px"
+    borderRadius: "30px",
+    boxShadow: "0px 2px 2px #000"
   },
   hr: {
     width: "100%",
@@ -91,27 +105,39 @@ const styles = {
     justifyContent: "space-evenly"
   },
   icon: {
-    color: "#fff",
+    color: "#f0efd1",
     width: "40px",
     height: "auto",
-    margin: "10px"
+    margin: "10px",
+    cursor: "pointer",
+    "&:hover": {
+      color: "#cfba58"
+    }
   },
   github: {
     width: "32px",
     height: "32px",
     margin: "10px",
+    cursor: "pointer",
     backgroundImage:
       "url(/assets/images/icons/github/GitHub-Mark-Light-32px.png)",
     backgroundSize: "contain",
-    backgroundRepeat: "no-repeat"
+    backgroundRepeat: "no-repeat",
+    "&:hover": {
+      opacity: 0.54
+    }
   },
   linkedin: {
     width: "32px",
     height: "32px",
     margin: "10px",
+    cursor: "pointer",
     backgroundImage: "url(/assets/images/icons/linkedin/LI-In-Bug-light.png)",
     backgroundSize: "contain",
-    backgroundRepeat: "no-repeat"
+    backgroundRepeat: "no-repeat",
+    "&:hover": {
+      opacity: 0.54
+    }
   },
   brandBox: {
     display: "flex",
@@ -120,6 +146,17 @@ const styles = {
     justifyContent: "center"
   }
 };
+const handleNav = (loc, internal = false) => {
+  if (loc.length === 1) {
+    loc = "https://ejhalpin.github.io/" + this.props.repo;
+  }
+  if (internal) {
+    window.location.href = loc;
+  } else {
+    window.open(loc, "_blank");
+  }
+};
+
 const Nav = props => {
   const {
     sideNav,
@@ -147,16 +184,44 @@ const Nav = props => {
         </div>
         <div className={navCol}>
           <div className={navRow}>
-            <Email className={icon} />
+            <Email className={icon} onClick={props.openDialog} />
             <div className={github} />
             <div className={linkedin} />
           </div>
           <div className={hr} />
           <div className={navRow}>
-            <div className={elemTop}>About</div>
-            <div className={elemTop}>Skills</div>
-            <div className={elemTop}>Apps</div>
-            <div className={elemTop}>Connect</div>
+            <div
+              className={elemTop}
+              onClick={() => {
+                handleNav("#about", true);
+              }}
+            >
+              About
+            </div>
+            <div
+              className={elemTop}
+              onClick={() => {
+                handleNav("#skills", true);
+              }}
+            >
+              Skills
+            </div>
+            <div
+              className={elemTop}
+              onClick={() => {
+                handleNav("#apps", true);
+              }}
+            >
+              Apps
+            </div>
+            <div
+              className={elemTop}
+              onClick={() => {
+                handleNav("#connect", true);
+              }}
+            >
+              Connect
+            </div>
           </div>
         </div>
       </div>
@@ -167,14 +232,52 @@ const Nav = props => {
         <div className={navImg} />
         <div className={brand}>Eugene Halpin</div>
         <div className={hr} />
-        <div className={elemSide}>About</div>
-        <div className={elemSide}>Skills</div>
-        <div className={elemSide}>Apps</div>
-        <div className={elemSide}>Connect</div>
+        <div
+          className={elemSide}
+          onClick={() => {
+            handleNav("#about", true);
+          }}
+        >
+          About
+        </div>
+        <div
+          className={elemSide}
+          onClick={() => {
+            handleNav("#skills", true);
+          }}
+        >
+          Skills
+        </div>
+        <div
+          className={elemSide}
+          onClick={() => {
+            handleNav("#apps", true);
+          }}
+        >
+          Apps
+        </div>
+        <div
+          className={elemSide}
+          onClick={() => {
+            handleNav("#connect", true);
+          }}
+        >
+          Connect
+        </div>
         <div className={hr} />
-        <Email className={icon} />
-        <div className={github} />
-        <div className={linkedin} />
+        <Email className={icon} onClick={props.openDialog} />
+        <div
+          className={github}
+          onClick={() => {
+            handleNav("https://github.com/ejhalpin");
+          }}
+        />
+        <div
+          className={linkedin}
+          onClick={() => {
+            handleNav("https://www.linkedin.com/in/eugene-halpin/");
+          }}
+        />
       </div>
     );
   }

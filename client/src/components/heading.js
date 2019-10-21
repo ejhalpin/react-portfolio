@@ -1,34 +1,33 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { withStyles } from "@material-ui/core/styles";
-
 const styles = {
   heading: {
     width: "90%",
     padding: "10px",
-    textAlign: "left",
-    fontSize: "1.25rem",
+    textAlign: "center",
+    fontSize: "2rem",
     fontWeight: "700",
-    boxSizing: "border-box"
+    boxSizing: "border-box",
+    textShadow: "0px 2px #000",
+    color: "#cfba58"
   },
   hr: {
-    width: "100%",
+    boxSizing: "border-box",
     height: "2px",
-    margin: "5px 0",
-    backgroundImage:
-      "linear-gradient(to left, rgba(0, 0, 0, 0), 10%, #1c1c1c 50%, 90%, rgba(0, 0, 0, 0));"
+    width: "100%",
+    backgroundColor: "#cfba58",
+    boxShadow: "0px 2px 2px #000"
   }
 };
 
 const Heading = props => {
-  const { heading, hr } = props.classes;
+  const { classes } = props;
 
   return (
-    <Fragment>
-      <div className={heading} id={props.id}>
-        {props.children}
-      </div>
-      <div className={hr} />
-    </Fragment>
+    <div className={classes.heading} >
+      {props.children}
+      <div className={classes.hr} />
+    </div>
   );
 };
 
